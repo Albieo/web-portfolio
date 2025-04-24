@@ -1,0 +1,14 @@
+.service {
+  max-width: 500px;
+  margin: 0 auto;
+
+  @media (min-width: 800px) {
+    & + .service {
+      margin-left: 4em;
+    }
+
+    & > h3 {
+      margin-bottom: 1em;
+    }
+  }
+}

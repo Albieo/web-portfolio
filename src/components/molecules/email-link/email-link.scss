@@ -1,0 +1,8 @@
+.footer__link {
+  font-weight: var(--fw-bold);
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+

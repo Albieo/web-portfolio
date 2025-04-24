@@ -1,0 +1,19 @@
+.portfolio__img {
+  border-radius: 8px;
+  transition:
+    transform .7s cubic-bezier(.5, 0, .5, 1),
+    opacity .2s cubic-bezier(.5, 0, .5, 1);
+}
+
+.intro__img {
+  box-shadow: var(--bs);
+
+  @media (min-width: 600px) {
+    & {
+      grid-area: img;
+      min-width: 250px;
+      position: relative;
+      z-index: 2;
+    }
+  }
+}
