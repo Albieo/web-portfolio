@@ -6,14 +6,19 @@ interface PortfolioItemProps {
   imageSrc: string;
   title: string;
   index?: number;
+  project_url?: string;
 }
 
 const PortfolioItem = ({
   imageSrc,
   title,
+  project_url
 }: PortfolioItemProps): ReactNode => (
-  <a href="#" className="portfolio__item" title={title}>
+  <a href={project_url || '#'} className="portfolio__item" title={title}>
     <Image src={imageSrc} alt="" className="portfolio__img" />
+    <h3 className="project__title">
+      {title}
+    </h3>
   </a>
 );
 

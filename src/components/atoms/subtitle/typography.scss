@@ -1,3 +1,16 @@
+@media (min-width: 600px) {
+  .section__subtitle--about {
+    grid-area: subtitle;
+    grid-column: 1 / -1;
+    grid-row: 2;
+    position: relative;
+    left: -1em;
+    width: calc(100% + 2em);
+    padding-left: 2em;
+    padding-right: calc(200px + 4em);
+  }
+}
+
 .section__subtitle--projects {
   color: var(--clr-accent);
   font-weight: var(--fw-bold);

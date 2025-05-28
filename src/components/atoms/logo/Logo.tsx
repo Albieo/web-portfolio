@@ -1,13 +1,12 @@
-import { ReactElement, useState } from 'react'
+import { ReactElement } from 'react'
+import Image from '../image/Image'
+import logo from '../../../img/devjane.png'
 import './logo.scss'
 
 const Logo = (): ReactElement => {
-  const [name, setName] = useState('AlbieoDev')
   return (
     <div className="logo">
-      <button>
-        {name}
-      </button>
+      <Image className='logo--img' src={logo} alt="web logo"/>
     </div>
   )
 }

@@ -4,11 +4,6 @@ header {
   padding: 1em;
 }
 
-.logo {
-  max-width: 100px;
-  margin: 1em;
-}
-
 .nav {
   margin: 1em;
 }
@@ -42,11 +37,6 @@ header {
 }
 
 @media screen and (max-width: 768px) {
-  .logo {
-    max-width: 80px;
-    margin: 0;
-  }
-
   .nav {
     position: fixed;
     background-color: var(--clr-dark);
