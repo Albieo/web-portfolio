@@ -1,6 +1,11 @@
 .intro {
   position: relative;
 
+  &--dark {
+    background-color: var(--clr-dark-bg);
+    color: var(--clr-light);
+  }
+
   @media (min-width: 600px) {
     & {
       display: grid;
@@ -13,6 +18,3 @@
     }
   }
 }
-
-
-

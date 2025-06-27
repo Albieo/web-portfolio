@@ -1,0 +1,25 @@
+.nav__list {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+
+  .nav__list li:first-child {
+    margin-left: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    .nav__list {
+      list-style: none;
+      display: flex;
+      height: 100%;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}

@@ -3,20 +3,20 @@ import SocialIcon from '../../atoms/social-icon/SocialIcon'
 import './social-list.scss'
 
 const SocialList = () => (
-  <ul className="social-list">
-    <li className="social-list__item">
-      <SocialIcon icon={faGithub} href="https://github.com/albieo" title="GitHub" />
-    </li>
-    <li className="social-list__item">
-      <SocialIcon icon={faLinkedin} href="https://linkedin.com/in/albieo/" title="LinkedIn" />
-    </li>
-    <li className="social-list__item">
-      <SocialIcon icon={faTwitter} href="https://x.com/AlbertMpepo/" title="Twitter" />
-    </li>
-    <li className="social-list__item">
-      <SocialIcon icon={faInstagram} href="#" title="Instagram" />
-    </li>
-  </ul>
+    <ul className="social-list">
+        <li className="social-list__item">
+            <SocialIcon icon={faGithub} href="https://github.com/albieo" title="GitHub" />
+        </li>
+        <li className="social-list__item">
+            <SocialIcon icon={faLinkedin} href="https://linkedin.com/in/albieo/" title="LinkedIn" />
+        </li>
+        <li className="social-list__item">
+            <SocialIcon icon={faTwitter} href="https://x.com/AlbertMpepo/" title="Twitter" />
+        </li>
+        <li className="social-list__item">
+            <SocialIcon icon={faInstagram} href="https://www.instagram.com/albieo_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" title="Instagram" />
+        </li>
+    </ul>
 )
 
 export default SocialList

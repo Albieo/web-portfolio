@@ -1,0 +1,19 @@
+.button {
+  padding: 10px;
+  color: var(--clr-accent);
+  font-weight: var(--fw-bold);
+  border-radius: 20px;
+
+  &--light {
+    background-color: var(--clr-dark);
+  }
+
+  &--dark {
+    background-color: var(--clr-light);
+  }
+
+  &:hover {
+    background-color: lightseagreen;
+    color: var(--clr-light);
+  }
+}

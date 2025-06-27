@@ -1,0 +1,30 @@
+.nav-item {
+  >.nav__link {
+    margin: 0 1em;
+    font-size: var(--fs-h3);
+    font-weight: var(--fw-bold);
+    color: var(--clr-dark);
+    text-decoration: none;
+
+    &--dark {
+      color: var(--clr-light);
+    }
+
+    &:hover {
+      color: var(--clr-accent);
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    >.nav__link {
+      color: var(--clr-light);
+      text-decoration: none;
+      font-size: var(--fs-h2);
+      font-weight: var(--fw-bold);
+
+      &:hover {
+        color: var(--clr-accent);
+      }
+    }
+  }
+}

@@ -7,30 +7,34 @@ import Footer from './components/organisms/footer/Footer'
 import Header from './components/organisms/header/Header'
 import './App.css'
 import Cursor from './components/atoms/cursor/Cursor'
+import { ThemeContext } from './components/atoms/theme/ThemeContext';
 
 function App() {
-  const [navState, setNavState] = useState('')
+    const [navState, setNavState] = useState('')
+    const [theme, setTheme] = useState<'light' | 'dark'>('light')
 
-  useEffect(() => {
-    document.body.classList.add('has-custom-cursor')
-    return () => document.body.classList.remove('has-custom-cursor')
-  }, [])
+    useEffect(() => {
+        document.body.classList.add('has-custom-cursor')
+        return () => document.body.classList.remove('has-custom-cursor')
+    }, [])
 
-  const toggleNav = () => {
-    setNavState(prevState => prevState === '' ? 'nav-open' : '')
-  }
+    const toggleNav = () => {
+        setNavState(prevState => prevState === '' ? 'nav-open' : '')
+    }
 
-  return (
-    <div className={navState}>
-      <Cursor />
-      <Header toggleNav={toggleNav} />
-      <Intro />
-      <MyService />
-      <AboutMe />
-      <Projects />
-      <Footer />
-    </div> 
-  )
+    return (
+        <ThemeContext.Provider value={{ theme, setTheme }}>
+            <div className={navState}>
+                <Cursor />
+                <Header toggleNav={toggleNav} />
+                <Intro />
+                <MyService />
+                <AboutMe />
+                <Projects />
+                <Footer />
+            </div>
+        </ThemeContext.Provider>
+    )
 }
 
 export default App
