@@ -26,12 +26,14 @@ function App() {
         <ThemeContext.Provider value={{ theme, setTheme }}>
             <div className={navState}>
                 <Cursor />
-                <Header toggleNav={toggleNav} />
-                <Intro />
-                <MyService />
-                <AboutMe />
-                <Projects />
-                <Footer />
+                <main className={theme}>
+                    <Header toggleNav={toggleNav} />
+                    <Intro />
+                    <MyService />
+                    <AboutMe />
+                    <Projects />
+                    <Footer />
+                </main>
             </div>
         </ThemeContext.Provider>
     )
