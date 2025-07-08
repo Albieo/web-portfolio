@@ -1,9 +1,9 @@
-import { ReactNode } from "react"
-import jane_about from '../../../img/dev-jane-02.jpg'
-import Image from "../../atoms/image/Image"
+import { ReactNode } from "react";
+import img_about from '../../../img/fullbody.jpg';
+import Image from "../../atoms/image/Image";
 import { useTheme } from "../../atoms/theme/ThemeContext";
-import './about-me.scss'
-import Subtitle from "../../atoms/subtitle/Subtitle"
+import './about-me.scss';
+import Subtitle from "../../atoms/subtitle/Subtitle";
 
 const AboutMe = (): ReactNode => {
     const { theme } = useTheme();
@@ -13,7 +13,7 @@ const AboutMe = (): ReactNode => {
             <h2 className="section__title section__title--about">Who I am</h2>
             <Subtitle
                 className="section__subtitle section__subtitle--about"
-                text={"Designer & developer based out of NYC."}
+                text={"Software Engineer based out of Johannesburg."}
             />
             <div className="about-me__body">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -26,7 +26,7 @@ const AboutMe = (): ReactNode => {
                     consequat.</p>
             </div>
 
-            <Image className="about-me__img" src={jane_about} alt="Jane leaning against a bus" />
+            <Image className="about-me__img" src={img_about} alt="Jane leaning against a bus" />
         </section>
     )
 }
