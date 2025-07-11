@@ -1,6 +1,5 @@
 import { NavItem } from "../nav-item/NavItem";
 import { ThemeButton } from '../../atoms/button/ThemeButton';
-import { useTheme } from '../../atoms/theme/ThemeContext';
 import './nav-list.scss'
 
 const navItems = [
