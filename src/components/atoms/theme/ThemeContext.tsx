@@ -6,4 +6,12 @@ export type ThemeContextType = {
 }
 
 export const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
-export const useTheme = () => useContext(ThemeContext);
+export const useTheme = () => {
+    const context = useContext(ThemeContext);
+
+    if (!context) {
+        throw new Error('useTheme must be used within a ThemeProvider.')
+    }
+
+    return context
+}
