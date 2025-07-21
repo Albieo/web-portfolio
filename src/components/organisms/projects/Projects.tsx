@@ -14,40 +14,40 @@ import portfolio_09 from '../../../img/portfolio-09.jpg';
 import './projects.scss';
 
 const portfolioItems = [
-    { src: portfolio_01, title: "Portfolio item 01" },
-    { src: portfolio_02, title: "Portfolio item 02" },
-    { src: portfolio_03, title: "Portfolio item 03" },
-    { src: portfolio_04, title: "Portfolio item 04" },
-    { src: portfolio_05, title: "Portfolio item 05" },
-    { src: portfolio_06, title: "Portfolio item 06" },
-    { src: portfolio_07, title: "Portfolio item 07" },
-    { src: portfolio_08, title: "Portfolio item 08" },
-    { src: portfolio_09, title: "Portfolio item 09" },
-    // { src: portfolio_10, title: "Portfolio item 10" },
+  { src: portfolio_01, title: "Portfolio item 01" },
+  { src: portfolio_02, title: "Portfolio item 02" },
+  { src: portfolio_03, title: "Portfolio item 03" },
+  { src: portfolio_04, title: "Portfolio item 04" },
+  { src: portfolio_05, title: "Portfolio item 05" },
+  { src: portfolio_06, title: "Portfolio item 06" },
+  { src: portfolio_07, title: "Portfolio item 07" },
+  { src: portfolio_08, title: "Portfolio item 08" },
+  { src: portfolio_09, title: "Portfolio item 09" },
+  // { src: portfolio_10, title: "Portfolio item 10" },
 ];
 
 const Projects = (): ReactNode => (
-    <section className="projects" id="projects">
-        <div className="project__bg">
-            <SectionHeader
-                title="My projects"
-                subtitle="A selection of my range of work."
-                titleClass="section__title section__title--projects"
-                subtitleClass="section__subtitle section__subtitle--projects"
-            />
+  <section className="projects" id="projects">
+    <div className="project__bg">
+      <SectionHeader
+        title="My projects"
+        subtitle="A selection of my range of work."
+        titleClass="section__title section__title--projects"
+        subtitleClass="section__subtitle section__subtitle--projects"
+      />
 
-            <div className="portfolio">
-                {portfolioItems.map((item, index) => (
-                    <PortfolioItem
-                        key={index}
-                        imageSrc={item.src}
-                        title={item.title}
-                        index={index}
-                    />
-                ))}
-            </div>
-        </div>
-    </section>
+      <div className="portfolio">
+        {portfolioItems.map((item, index) => (
+          <PortfolioItem
+            key={index}
+            imageSrc={item.src}
+            title={item.title}
+            index={index}
+          />
+        ))}
+      </div>
+    </div>
+  </section>
 );
 
 export default Projects;

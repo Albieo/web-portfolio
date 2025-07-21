@@ -6,9 +6,13 @@
     background-color: var(--clr-dark-bg);
     color: var(--clr-light);
   }
+
+  &__img {
+    margin-top: 1em;
+  }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   .about-me {
     display: grid;
     grid-template-columns: 1fr 200px;

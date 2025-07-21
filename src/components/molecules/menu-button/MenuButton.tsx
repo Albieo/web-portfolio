@@ -1,16 +1,16 @@
 import { HamburgerIcon } from "../../atoms/hamburger-icon/HamburgerIcon";
 
+import './menu-button.scss'
+
 interface MenuButtonProps {
-    onClick: () => void;
+  onClick: () => void;
 }
 
 export const MenuButton = ({ onClick }: MenuButtonProps) => (
-    <button
-        type="button"
-        className="nav-toggle"
-        aria-label='toggle navigation'
-        onClick={onClick}
-    >
-        <HamburgerIcon />
-    </button>
+  <div
+    className="nav--toggle"
+    onClick={onClick}
+  >
+    <HamburgerIcon />
+  </div>
 )

@@ -40,10 +40,10 @@ const Cursor: React.FC<CursorProps> = ({
   // Smooth cursor movement using requestAnimationFrame
   const move = useCallback((e: MouseEvent) => {
     if (deviceType === 'touch') return;
-    
+
     // Update position state
     setPosition({ x: e.clientX, y: e.clientY });
-    
+
     // Use RAF for smooth animation
     requestAnimationFrame(() => {
       if (cursorBorderRef.current) {
@@ -68,7 +68,7 @@ const Cursor: React.FC<CursorProps> = ({
     if (deviceType === 'mouse') {
       // Hide default cursor
       document.body.style.cursor = 'none';
-      
+
       // Set initial position to center
       setPosition({
         x: window.innerWidth / 2,
@@ -91,7 +91,7 @@ const Cursor: React.FC<CursorProps> = ({
       return () => {
         // Restore default cursor
         document.body.style.cursor = '';
-        
+
         document.removeEventListener('mousemove', move);
         document.removeEventListener('mousedown', () => setIsClicking(true));
         document.removeEventListener('mouseup', () => setIsClicking(false));

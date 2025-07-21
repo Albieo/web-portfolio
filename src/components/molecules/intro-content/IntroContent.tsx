@@ -7,9 +7,9 @@ interface IntroContentProps {
   subtitle: string
 }
 
-const IntroContent = ({ 
-  name, 
-  subtitle 
+const IntroContent = ({
+  name,
+  subtitle
 }: IntroContentProps): ReactNode => (
   <>
     <h1 className="section__title section__title--intro">

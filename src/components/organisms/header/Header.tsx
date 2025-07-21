@@ -5,18 +5,23 @@ import { MenuButton } from "../../molecules/menu-button/MenuButton"
 import { NavList } from "../../molecules/nav-list/NavList"
 import { useTheme } from "../../atoms/theme/ThemeContext";
 
-const Header = ({ toggleNav }: { toggleNav: () => void }): ReactNode => {
-    const { theme } = useTheme();
+interface HeaderProps {
+  toggleNav: () => void;
+  navOpen: boolean;
+}
 
-    return (
-        <header className={`header ${theme === 'light' ? 'header--light' : 'header--dark'}`}>
-            <Logo />
-            <MenuButton onClick={toggleNav} />
-            <nav className={`nav ${theme === 'light' ? 'nav--light' : 'nav--dark'}`}>
-                <NavList />
-            </nav>
-        </header>
-    )
+const Header = ({ toggleNav, navOpen }: HeaderProps): ReactNode => {
+  const { theme } = useTheme();
+
+  return (
+    <header className={`header ${theme === 'light' ? 'header--light' : 'header--dark'}`}>
+      <Logo />
+      <nav className={`nav ${theme === 'light' ? 'nav--light' : 'nav--dark'} ${navOpen ? 'nav--open' : ''}`}>
+        <NavList />
+      </nav>
+      <MenuButton onClick={toggleNav} />
+    </header>
+  )
 }
 export default Header
 

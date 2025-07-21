@@ -1,9 +1,9 @@
 import { ReactNode } from 'react';
 import './link.scss';
 
-const Link = ({ href, className, children, title }: { 
-  href: string; 
-  className?: string; 
+const Link = ({ href, className, children, title }: {
+  href: string;
+  className?: string;
   children: ReactNode;
   title?: string;
 }) => (
