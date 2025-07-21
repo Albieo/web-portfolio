@@ -1,6 +1,6 @@
 import { ReactElement } from 'react'
 import Image from '../image/Image'
-import logo from '../../../img/AMlogo(clean).svg';
+import logo from '../../../img/logo.svg';
 import './logo.scss'
 
 const Logo = (): ReactElement => {
