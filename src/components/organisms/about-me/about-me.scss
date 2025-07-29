@@ -8,14 +8,14 @@
   }
 
   &__img {
-    margin-top: 1em;
+    margin-top: 2em;
   }
 }
 
 @media (min-width: 700px) {
   .about-me {
     display: grid;
-    grid-template-columns: 1fr 200px;
+    grid-template-columns: 1fr 220px;
     grid-template-areas:
       "title img"
       "subtitle img"
