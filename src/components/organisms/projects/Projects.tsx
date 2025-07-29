@@ -14,10 +14,10 @@ import portfolio_09 from '../../../img/portfolio-09.jpg';
 import './projects.scss';
 
 const portfolioItems = [
-  { src: portfolio_01, title: "Portfolio item 01" },
-  { src: portfolio_02, title: "Portfolio item 02" },
-  { src: portfolio_03, title: "Portfolio item 03" },
-  { src: portfolio_04, title: "Portfolio item 04" },
+  { src: portfolio_01, title: "Quizzical", url: "https://quizzical-psi-wheat.vercel.app/" },
+  { src: portfolio_02, title: "AirBnB Clone", url: "https://github.com/Albieo/AirBnB_clone_v4" },
+  { src: portfolio_03, title: "Number Guessing Game", url: "https://github.com/Albieo/Number-Guessing-Game" },
+  { src: portfolio_04, title: "Basketball Scoreboard", url: "https://basketball-scoreboard-eta.vercel.app/" },
   { src: portfolio_05, title: "Portfolio item 05" },
   { src: portfolio_06, title: "Portfolio item 06" },
   { src: portfolio_07, title: "Portfolio item 07" },
@@ -42,6 +42,7 @@ const Projects = (): ReactNode => (
             key={index}
             imageSrc={item.src}
             title={item.title}
+            project_url={item.url}
             index={index}
           />
         ))}

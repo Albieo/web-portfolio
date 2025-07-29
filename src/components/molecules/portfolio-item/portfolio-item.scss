@@ -3,6 +3,7 @@
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -19,6 +20,7 @@
 
   .project__title {
     display: none;
+    margin: 0 1.5em;
     font-size: 24px;
     color: var(--clr-light);
     z-index: 3;
@@ -35,10 +37,9 @@
     transform: scale(1.2);
     opacity: 0.5;
 
-    + .project__title {
+    +.project__title {
       display: inline;
       animation: slideInUp 0.6s ease-out forwards;
     }
   }
 }
-
