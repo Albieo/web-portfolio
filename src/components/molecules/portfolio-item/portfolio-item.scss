@@ -17,6 +17,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  
+  .portfolio_img {
+    width: 250px;
+    height: 250px;
+  }
 
   .project__title {
     display: none;

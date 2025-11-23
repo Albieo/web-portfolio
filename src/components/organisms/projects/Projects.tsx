@@ -1,11 +1,11 @@
 import { ReactNode } from "react";
 import SectionHeader from "../../molecules/section-header/SectionHeader";
 import PortfolioItem from "../../molecules/portfolio-item/PortfolioItem";
-import portfolio_01 from '../../../img/portfolio-01.jpg';
-import portfolio_02 from '../../../img/portfolio-02.jpg';
-import portfolio_03 from '../../../img/bash.png';
-import portfolio_04 from '../../../img/portfolio-04.jpg';
-import portfolio_05 from '../../../img/portfolio-05.jpg';
+import portfolio_01 from '../../../img/square-trivia.jpg';
+import portfolio_02 from '../../../img/square-flight.jpg';
+import portfolio_03 from '../../../img/py_laptop.jpg';
+import portfolio_04 from '../../../img/square-bball.jpg';
+import portfolio_05 from '../../../img/square-construction.jpg';
 // import portfolio_06 from '../../../img/portfolio-06.jpg';
 // import portfolio_07 from '../../../img/portfolio-07.jpg';
 // import portfolio_08 from '../../../img/portfolio-08.jpg';
