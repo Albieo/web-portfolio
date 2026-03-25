@@ -12,7 +12,7 @@ const navItems: ReadonlyArray<NavItem> = [
   { href: "#about", text: "About" },
   { href: "#projects", text: "Projects" },
   { href: "#services", text: "My Services" },
-  { href: "/Albert_Mpepo_Resume.pdf", text: "Resume" }
+  { href: "/Albert_Mpepo_Resume.pdf", text: "Download Resume" }
 ];
 
 export const NavList = () => (
