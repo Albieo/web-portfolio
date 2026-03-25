@@ -1,5 +1,4 @@
 import { ReactNode } from 'react'
-import Subtitle from '../../atoms/subtitle/Subtitle'
 import './intro-content.scss'
 
 interface IntroContentProps {
@@ -15,7 +14,12 @@ const IntroContent = ({
     <h1 className="section__title section__title--intro">
       Hi, I am <strong>{name}</strong>
     </h1>
-    <Subtitle className="section__subtitle section__subtitle--intro" text={subtitle} />
+    <div className="section__subtitle section__subtitle--intro infinite-scroll-wrapper">
+      <div className="infinite-scroll-container">
+        <span className="infinite-scroll-text">{subtitle}</span>
+        <span className="infinite-scroll-text" aria-hidden="true">{subtitle}</span>
+      </div>
+    </div>
   </>
 )
 

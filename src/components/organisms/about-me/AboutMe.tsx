@@ -17,15 +17,25 @@ const AboutMe = (): ReactNode => {
       />
       <div className="about-me__body">
         <p>
-          Hey there! I’m Albert Mpepo — though most people call me Albieo. I'm a fullstack developer with a strong foundation in both low-level programming and modern web technologies. My journey started in 2022 at the ALX Software Engineering bootcamp, where I learned C, Python, and SQL. Since then, I've taken the self-taught path, diving deep into web development with HTML, CSS, JavaScript, TypeScript, React, Django, and more.
+          Hi, I’m Albert Mpepo (Albieo), a full-stack developer with a strong foundation in both low-level programming and modern web technologies. I began my journey in 2022 through the ALX Software Engineering program, where I built core skills in C, Python, and SQL. Since then, I’ve continued developing independently, focusing on building real-world web applications using React, TypeScript, Django, and related technologies.
         </p>
+
         <br />
+
         <p>
-          I specialize in building responsive, user-friendly interfaces and reusable UI components. I enjoy the challenge of bringing ideas to life across all devices and take pride in writing clean, scalable code. Currently, I'm working on <strong>CodeQuest</strong>, a small but growing dev initiative — where we’re creating a solid portfolio and pushing each other to learn and build better (even if we're not a formal company yet).
+          I specialize in creating responsive, user-focused interfaces while also working across the stack to design and integrate APIs, backend services, and content management systems like Sanity.io. I enjoy turning ideas into scalable, maintainable applications and writing clean, efficient code that performs well across devices.
         </p>
+
         <br />
+
         <p>
-          I'm actively learning Java and Spring Boot while mastering Django Rest Framework to strengthen my backend expertise. I'm looking for opportunities in frontend or fullstack development, ideally with Python on the backend, where I can contribute to impactful projects and grow alongside experienced teams.
+          Currently, I’m contributing to <strong>CodeQuest</strong>, a collaborative development initiative where we build projects, refine our skills, and focus on delivering practical, production-ready applications. I’m also expanding my backend expertise with Java and Spring Boot, alongside Django REST Framework.
+        </p>
+
+        <br />
+
+        <p>
+          I’m seeking opportunities in frontend or full-stack development where I can contribute to meaningful projects, continue growing as an engineer, and work alongside experienced teams.
         </p>
       </div>
 

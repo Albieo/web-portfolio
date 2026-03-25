@@ -1,8 +1,5 @@
 import { useEffect, useState } from 'react'
-import Intro from './components/organisms/introduction/Intro'
-import MyService from './components/organisms/my-services/MyService'
-import AboutMe from './components/organisms/about-me/AboutMe'
-import Projects from './components/organisms/projects/Projects'
+import { Outlet } from 'react-router-dom'
 import Footer from './components/organisms/footer/Footer'
 import Header from './components/organisms/header/Header'
 import './App.css'
@@ -28,10 +25,7 @@ function App() {
       <Cursor />
       <main className={theme}>
         <Header toggleNav={toggleNav} navOpen={navState} />
-        <Intro />
-        <MyService />
-        <AboutMe />
-        <Projects />
+        <Outlet />
         <Footer />
       </main>
     </ThemeContext.Provider>

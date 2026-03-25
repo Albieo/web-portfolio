@@ -11,8 +11,8 @@ const Intro = (): ReactNode => {
 
   return (
     <section className={`intro ${theme === 'light' ? 'intro--light' : 'intro--dark'}`} id="home">
-      <IntroContent name={'Albert Mpepo'} subtitle="Full Stack Engineer" />
-      <Image className="intro__img" src={img_intro} alt="a picture of Jane Smith smiling" />
+      <IntroContent name={'Albert 👋'} subtitle="Full-Stack Developer specializing in React & API-driven systems" />
+      <Image className="intro__img" src={img_intro} alt="a picture of Albert Mpepo" />
       <SplashCursor />
     </section>
   )

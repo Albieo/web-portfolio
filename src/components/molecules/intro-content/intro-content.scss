@@ -9,3 +9,27 @@
     width: calc(100% + 1.5em);
   }
 }
+
+.infinite-scroll-wrapper {
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex !important;
+  align-items: center;
+  max-width: 40em;
+}
+
+.infinite-scroll-container {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: marquee 20s linear infinite;
+}
+
+.infinite-scroll-text {
+  display: inline-block;
+  padding-left: 2rem;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}

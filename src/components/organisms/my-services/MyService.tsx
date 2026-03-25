@@ -4,18 +4,23 @@ import Button from "../../atoms/button/Button";
 import ServiceItem from "../../molecules/service-item/ServiceItem";
 import "./my-service.scss";
 
-const services = [
+interface Service {
+  title: string;
+  description: string;
+}
+
+const services: ReadonlyArray<Service> = [
   {
     title: "Full-Stack Web Development",
-    description: "Offering end-to-end development of robust web applications, combining responsive front-end interfaces with secure, scalable back-end systems. Proficient in modern tech stacks including React, Node.js, Django, and PostgreSQL, with a focus on performance, accessibility, and clean architecture."
+    description: "Building end-to-end web applications using React, TypeScript, Django, and Spring Boot. Focused on creating scalable systems with clean architecture, API-driven design, and efficient data handling using PostgreSQL and modern backend practices."
   },
   {
-    title: "Front-End Engineering & UI Development",
-    description: "Delivering intuitive and responsive user interfaces with a strong emphasis on usability, design systems, and modern JavaScript frameworks. Skilled in state management, API integration, and adaptive layout techniques using tools like React and TailwindCSS."
+    title: "Frontend Development & UI Engineering",
+    description: "Developing responsive, user-focused interfaces using React, JavaScript, and modern CSS (Sass/Tailwind). Emphasis on performance, reusable components, API integration, and delivering clean, intuitive user experiences across devices."
   },
   {
-    title: "Automation & Command-Line Tool Development",
-    description: "Building lightweight, efficient command-line tools and automation scripts using languages like Python and C. Focused on solving backend tasks, data handling, and system interaction through structured, maintainable code with an emphasis on developer ergonomics."
+    title: "API Integration & CMS Solutions",
+    description: "Integrating REST APIs and headless CMS platforms like Sanity.io to power dynamic, content-driven applications. Experienced in real-time data handling, GROQ queries, and building flexible systems for managing and delivering content."
   }
 ];
 
