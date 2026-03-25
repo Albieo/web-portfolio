@@ -2,11 +2,17 @@ import { NavItem } from "../nav-item/NavItem";
 import { ThemeButton } from '../../atoms/button/ThemeButton';
 import './nav-list.scss'
 
-const navItems = [
+interface NavItem {
+  href: string;
+  text: string;
+}
+
+const navItems: ReadonlyArray<NavItem> = [
   { href: "#home", text: "Home" },
   { href: "#about", text: "About" },
   { href: "#projects", text: "Projects" },
-  { href: "#services", text: "My Services" }
+  { href: "#services", text: "My Services" },
+  { href: "/Albert_Mpepo_Resume.pdf", text: "Resume" }
 ];
 
 export const NavList = () => (

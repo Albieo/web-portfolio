@@ -16,6 +16,7 @@ export const NavItem = ({ href, children }: NavItemProps) => {
         href={href}
         className={`nav__link ${theme === 'light' ? 'nav__link--light' : 'nav__link--dark'}`}
         title={children}
+        download={href.includes('Resume')}
       >
         {children}
       </Link>
