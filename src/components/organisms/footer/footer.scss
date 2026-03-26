@@ -2,6 +2,11 @@
   background-color: #111;
   color: var(--clr-accent);
   text-align: center;
-  font-size: var(--fs-h3);
-  padding: 3em 0;
+  font-size: 1rem;
+  padding: 2.5em 2em;
+  border-top: 2px solid rgba(22, 224, 189, 0.2);
+
+  > * + * {
+    margin-top: 1em;
+  }
 }

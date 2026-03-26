@@ -1,15 +1,17 @@
 import Intro from '../components/organisms/introduction/Intro'
 import MyService from '../components/organisms/my-services/MyService'
-import AboutMe from '../components/organisms/about-me/AboutMe'
 import Projects from '../components/organisms/projects/Projects'
+import SkillsPreview from '../components/organisms/skills-preview/SkillsPreview'
+import CTA from '../components/organisms/cta/CTA'
 
 export default function HomePage() {
   return (
     <>
       <Intro />
       <MyService />
-      <AboutMe />
+      <SkillsPreview />
       <Projects />
+      <CTA />
     </>
   )
 }

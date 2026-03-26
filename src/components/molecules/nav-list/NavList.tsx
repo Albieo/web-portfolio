@@ -8,10 +8,10 @@ interface NavItem {
 }
 
 const navItems: ReadonlyArray<NavItem> = [
-  { href: "#home", text: "Home" },
-  { href: "#about", text: "About" },
-  { href: "#projects", text: "Projects" },
-  { href: "#services", text: "My Services" },
+  { href: "/", text: "Home" },
+  { href: "/projects", text: "Projects" },
+  { href: "/about", text: "About" },
+  { href: "/contact", text: "Contact" },
   { href: "/Albert_Mpepo_Resume.pdf", text: "Download Resume" }
 ];
 

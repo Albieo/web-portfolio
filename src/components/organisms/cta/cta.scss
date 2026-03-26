@@ -1,0 +1,17 @@
+.cta {
+  text-align: center;
+  padding: 4em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &--dark {
+    background-color: var(--clr-dark-bg);
+    color: var(--clr-light);
+  }
+
+  >.btn {
+    margin-top: 1.5em;
+  }
+}

@@ -9,6 +9,19 @@
 
   &__img {
     margin-top: 2em;
+    border-radius: 4px;
+    box-shadow: var(--bs);
+  }
+
+  &__body {
+    p {
+      line-height: 1.8;
+      margin-bottom: 1em;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
 }
 

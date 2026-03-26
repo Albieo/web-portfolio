@@ -15,20 +15,23 @@
   &::after {
     content: "";
     display: block;
-    width: 2em;
-    height: 1px;
+    width: 2.5em;
+    height: 2px;
     margin: 0.5em auto 1em;
-    background-color: var(--clr-light);
-    opacity: 0.5;
+    background-color: var(--clr-accent);
+    opacity: 0.4;
+    border-radius: 2px;
   }
 }
 
 .services {
-  margin-bottom: 4em;
+  display: grid;
+  gap: 1.25em;
+  margin-bottom: 3em;
 
   @media (min-width: 800px) {
     & {
-      display: flex;
+      grid-template-columns: repeat(3, 1fr);
       max-width: 1000px;
       margin-left: auto;
       margin-right: auto;

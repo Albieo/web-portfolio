@@ -1,7 +1,7 @@
 @keyframes slideInUp {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(12px);
   }
 
   to {
@@ -14,22 +14,30 @@
   background-color: var(--clr-accent);
   border-radius: 8px;
   overflow: hidden;
+  position: relative;
+  aspect-ratio: 1 / 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   .portfolio_img {
-    width: 250px;
-    height: 250px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease, opacity 0.4s ease;
   }
 
   .project__title {
     display: none;
-    margin: 0 1.5em;
-    font-size: 24px;
+    text-align: center;
+    padding: 0 1em;
+    font-size: 1.1rem;
+    font-weight: 700;
     color: var(--clr-light);
     z-index: 3;
     position: absolute;
+    pointer-events: none;
   }
 
   &:focus {
@@ -39,12 +47,12 @@
 
   &:hover .portfolio__img,
   &:focus .portfolio__img {
-    transform: scale(1.2);
-    opacity: 0.5;
+    transform: scale(1.08);
+    opacity: 0.45;
 
-    +.project__title {
+    + .project__title {
       display: inline;
-      animation: slideInUp 0.6s ease-out forwards;
+      animation: slideInUp 0.4s ease-out forwards;
     }
   }
 }

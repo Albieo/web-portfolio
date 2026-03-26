@@ -10,6 +10,19 @@
   }
 }
 
+/* On mobile, prevent overflow clipping */
+@media (max-width: 599px) {
+  .section__subtitle--intro {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+}
+
 .infinite-scroll-wrapper {
   overflow: hidden;
   white-space: nowrap;
