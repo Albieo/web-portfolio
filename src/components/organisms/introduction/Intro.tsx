@@ -13,7 +13,7 @@ const Intro = (): ReactNode => {
     <section className={`intro ${theme === 'light' ? 'intro--light' : 'intro--dark'}`} id="home">
       <IntroContent
         name={'Albert 👋'}
-        subtitle="Full-Stack Developer specializing in React & API-driven systems"
+        subtitle="Building scalable, user-focused web applications with React and modern backend technologies."
       />
       <Image className="intro__img" src={img_intro} alt="a picture of Albert Mpepo" />
       <SplashCursor />

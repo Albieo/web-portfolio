@@ -93,12 +93,12 @@ strong {
   font-weight: var(--fw-bold);
   font-size: 0.95rem;
   letter-spacing: 0.03em;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn:hover {
-  transform: scale(1.07);
-  box-shadow: 0 4px 16px rgba(22, 224, 189, 0.35);
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(22, 224, 189, 0.4);
 }
 
 /* Typography */
@@ -140,6 +140,14 @@ p {
 
 .section__title--intro strong {
   display: block;
+}
+
+.section__title--intro span {
+  display: block;
+  font-size: 0.5em;
+  font-weight: var(--fw-reg);
+  color: var(--clr-accent);
+  margin-top: 0.25em;
 }
 
 .section__subtitle {

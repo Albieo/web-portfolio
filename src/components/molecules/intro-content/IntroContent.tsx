@@ -10,6 +10,7 @@ const IntroContent = ({ name, subtitle }: IntroContentProps): ReactNode => (
   <>
     <h1 className="section__title section__title--intro">
       Hi, I am <strong>{name}</strong>
+      <span>Full-Stack Developer</span>
     </h1>
     <div className="section__subtitle section__subtitle--intro infinite-scroll-wrapper">
       <div className="infinite-scroll-container">
