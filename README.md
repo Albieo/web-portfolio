@@ -1,57 +1,60 @@
-# web-portfolio
-This is website designed to showcase my web development skills.
+# Albert Web Portfolio
 
-# React + TypeScript + Vite
+A modern, responsive web portfolio designed to showcase development skills, projects, and professional background.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 Technologies Used
 
-Currently, two official plugins are available:
+- **React 19**: Modern UI library for building interactive interfaces.
+- **TypeScript**: Static typing for enhanced developer experience and code quality.
+- **Vite**: Ultra-fast build tool and development server.
+- **React Router 7**: Declarative routing for multi-page navigation.
+- **Sass**: Advanced CSS extension for cleaner and more maintainable styles.
+- **FontAwesome**: High-quality icons for a polished look.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Getting Started
 
-## Expanding the ESLint configuration
+Follow these instructions to get a copy of the project up and running on your local machine.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Prerequisites
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- [Node.js](https://nodejs.org/) (v18 or higher)
+- [Yarn](https://yarnpkg.com/)
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/albieo/web-portfolio.git
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd web-portfolio
+   ```
+
+3. Install dependencies:
+   ```bash
+   yarn install
+   ```
+
+### Development
+
+Start the development server:
+```bash
+yarn dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+The application will be available at `http://localhost:5173`.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Building for Production
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+To create an optimized production build:
+```bash
+yarn build
 ```
+
+The output will be in the `dist` folder.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
