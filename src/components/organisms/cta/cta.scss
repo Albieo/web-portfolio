@@ -11,6 +11,20 @@
     color: var(--clr-light);
   }
 
+  >.section {
+    &__subtitle {
+      font-size: 1.5rem;
+      margin-bottom: 2em;
+      color: var(--clr-dark);
+
+      &--dark {
+        font-size: 1.5rem;
+        margin-bottom: 2em;
+        color: var(--clr-light);
+      }
+    }
+  }
+
   > .btn {
     margin-top: 1.5em;
   }
