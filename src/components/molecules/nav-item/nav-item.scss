@@ -1,5 +1,5 @@
 .nav-item {
-  >.nav__link {
+  > .nav__link {
     margin: 0 1em;
     font-size: var(--fs-h3);
     font-weight: var(--fw-bold);
@@ -16,7 +16,7 @@
   }
 
   @media screen and (max-width: 768px) {
-    >.nav__link {
+    > .nav__link {
       color: var(--clr-light);
       text-decoration: none;
       font-size: var(--fs-h2);

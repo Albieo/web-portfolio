@@ -33,7 +33,9 @@
   padding: 1.75em 1.5em;
   box-shadow: var(--bs);
   text-align: left;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 
   &:hover {
     transform: translateY(-4px);

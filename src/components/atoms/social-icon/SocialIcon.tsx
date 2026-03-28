@@ -1,9 +1,13 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import Link from '../link/Link';
 import './social-icon.scss';
 
-const SocialIcon = ({ icon, href, title }: {
+const SocialIcon = ({
+  icon,
+  href,
+  title,
+}: {
   icon: IconDefinition;
   href: string;
   title: string;
@@ -13,4 +17,4 @@ const SocialIcon = ({ icon, href, title }: {
   </Link>
 );
 
-export default SocialIcon
+export default SocialIcon;

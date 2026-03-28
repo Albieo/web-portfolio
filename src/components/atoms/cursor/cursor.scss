@@ -57,9 +57,7 @@ body.has-custom-cursor button {
 }
 
 /* Hide Cursor for Touch Devices */
-@media (pointer: coarse),
-(pointer: none) {
-
+@media (pointer: coarse), (pointer: none) {
   .cursor-border,
   .cursor-dot {
     display: none !important;

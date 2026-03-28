@@ -38,24 +38,27 @@ const Cursor: React.FC<CursorProps> = ({
   }, []);
 
   // Smooth cursor movement using requestAnimationFrame
-  const move = useCallback((e: MouseEvent) => {
-    if (deviceType === 'touch') return;
+  const move = useCallback(
+    (e: MouseEvent) => {
+      if (deviceType === 'touch') return;
 
-    // Update position state
-    setPosition({ x: e.clientX, y: e.clientY });
+      // Update position state
+      setPosition({ x: e.clientX, y: e.clientY });
 
-    // Use RAF for smooth animation
-    requestAnimationFrame(() => {
-      if (cursorBorderRef.current) {
-        cursorBorderRef.current.style.left = `${e.clientX}px`;
-        cursorBorderRef.current.style.top = `${e.clientY}px`;
-      }
-      if (cursorDotRef.current) {
-        cursorDotRef.current.style.left = `${e.clientX}px`;
-        cursorDotRef.current.style.top = `${e.clientY}px`;
-      }
-    });
-  }, [deviceType]);
+      // Use RAF for smooth animation
+      requestAnimationFrame(() => {
+        if (cursorBorderRef.current) {
+          cursorBorderRef.current.style.left = `${e.clientX}px`;
+          cursorBorderRef.current.style.top = `${e.clientY}px`;
+        }
+        if (cursorDotRef.current) {
+          cursorDotRef.current.style.left = `${e.clientX}px`;
+          cursorDotRef.current.style.top = `${e.clientY}px`;
+        }
+      });
+    },
+    [deviceType],
+  );
 
   // Set up event listeners
   useEffect(() => {
@@ -72,7 +75,7 @@ const Cursor: React.FC<CursorProps> = ({
       // Set initial position to center
       setPosition({
         x: window.innerWidth / 2,
-        y: window.innerHeight / 2
+        y: window.innerHeight / 2,
       });
 
       document.addEventListener('mousemove', move);
@@ -80,7 +83,7 @@ const Cursor: React.FC<CursorProps> = ({
       document.addEventListener('mouseup', () => setIsClicking(false));
 
       const interactiveElements = document.querySelectorAll(
-        'a, button, input, textarea, select, [role="button"], [data-cursor-hover]'
+        'a, button, input, textarea, select, [role="button"], [data-cursor-hover]',
       );
 
       interactiveElements.forEach((el) => {
@@ -111,29 +114,33 @@ const Cursor: React.FC<CursorProps> = ({
       <div
         ref={cursorBorderRef}
         className={`cursor-border ${isClicking ? 'clicking' : ''} ${isHovering ? 'hovering' : ''}`}
-        style={{
-          '--hover-scale': hoverScale,
-          '--click-scale': clickScale,
-          '--border-size': `${borderSize}px`,
-          '--border-color': borderColor,
-          '--border-color-hover': borderColorHover,
-          '--border-color-click': borderColorClick,
-          left: `${position.x}px`,
-          top: `${position.y}px`,
-        } as React.CSSProperties}
+        style={
+          {
+            '--hover-scale': hoverScale,
+            '--click-scale': clickScale,
+            '--border-size': `${borderSize}px`,
+            '--border-color': borderColor,
+            '--border-color-hover': borderColorHover,
+            '--border-color-click': borderColorClick,
+            left: `${position.x}px`,
+            top: `${position.y}px`,
+          } as React.CSSProperties
+        }
       />
       <div
         ref={cursorDotRef}
         className={`cursor-dot ${isClicking ? 'clicking' : ''} ${isHovering ? 'hovering' : ''}`}
-        style={{
-          '--hover-scale': hoverScale,
-          '--click-scale': clickScale,
-          '--dot-size': `${dotSize}px`,
-          '--dot-color': dotColor,
-          '--dot-color-hover': dotColorHover,
-          left: `${position.x}px`,
-          top: `${position.y}px`,
-        } as React.CSSProperties}
+        style={
+          {
+            '--hover-scale': hoverScale,
+            '--click-scale': clickScale,
+            '--dot-size': `${dotSize}px`,
+            '--dot-color': dotColor,
+            '--dot-color-hover': dotColorHover,
+            left: `${position.x}px`,
+            top: `${position.y}px`,
+          } as React.CSSProperties
+        }
       />
     </>
   );

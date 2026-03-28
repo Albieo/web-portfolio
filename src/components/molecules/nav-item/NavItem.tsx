@@ -1,6 +1,6 @@
-import Link from "../../atoms/link/Link";
+import Link from '../../atoms/link/Link';
 import { useTheme } from '../../atoms/theme/ThemeContext';
-import './nav-item.scss'
+import './nav-item.scss';
 
 interface NavItemProps {
   href: string;
@@ -21,5 +21,5 @@ export const NavItem = ({ href, children }: NavItemProps) => {
         {children}
       </Link>
     </li>
-  )
-}
+  );
+};

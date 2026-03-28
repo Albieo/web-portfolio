@@ -1,6 +1,6 @@
 .my-services {
   background-color: var(--clr-dark);
-  background-image: url("../../../img/services-bg.jpg");
+  background-image: url('../../../img/services-bg.jpg');
   background-size: cover;
   background-blend-mode: overlay;
   color: var(--clr-light);
@@ -13,7 +13,7 @@
   position: relative;
 
   &::after {
-    content: "";
+    content: '';
     display: block;
     width: 2.5em;
     height: 2px;

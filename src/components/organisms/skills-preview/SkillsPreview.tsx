@@ -35,13 +35,7 @@ const skillCategories: ReadonlyArray<SkillCategory> = [
   {
     title: 'Databases',
     icon: '🗄️',
-    skills: [
-      'PostgreSQL',
-      'MySQL',
-      'SQLite',
-      'Sanity.io (CMS)',
-      'ORM (Django, Hibernate)',
-    ],
+    skills: ['PostgreSQL', 'MySQL', 'SQLite', 'Sanity.io (CMS)', 'ORM (Django, Hibernate)'],
   },
   {
     title: 'DevOps',

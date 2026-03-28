@@ -1,6 +1,6 @@
-import { ReactNode } from "react";
-import Title from "../../atoms/title/Title";
-import Subtitle from "../../atoms/subtitle/Subtitle";
+import { ReactNode } from 'react';
+import Title from '../../atoms/title/Title';
+import Subtitle from '../../atoms/subtitle/Subtitle';
 
 interface SectionHeaderProps {
   title: string;

@@ -3,11 +3,11 @@
   justify-content: space-between;
   padding: 1em;
 
-  >.nav {
+  > .nav {
     margin: 1em;
 
-    >.nav__list {
-      >.nav__item>.nav__link {
+    > .nav__list {
+      > .nav__item > .nav__link {
         margin: 0 1em;
         font-size: var(--fs-h3);
         font-weight: var(--fw-bold);
@@ -40,19 +40,19 @@
       top: 0;
       right: -500px;
       z-index: 10;
-      transition: .3s ease;
+      transition: 0.3s ease;
 
-      >.nav__list {
+      > .nav__list {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin-top: 4em;
 
-        >.nav__item {
+        > .nav__item {
           margin: 2em 0;
 
-          >.nav__link {
+          > .nav__link {
             color: #fff;
             text-align: center;
             font-size: 2rem;
@@ -63,11 +63,11 @@
       &--open {
         right: 0;
 
-        +.nav--toggle {
+        + .nav--toggle {
           position: fixed;
           margin-left: calc(100% - 85px);
 
-          >.ham-menu>span {
+          > .ham-menu > span {
             &:nth-child(1) {
               top: 50%;
               transform: translate(-50%, -50%) rotate(45deg);

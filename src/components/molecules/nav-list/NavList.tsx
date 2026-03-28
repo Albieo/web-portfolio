@@ -1,6 +1,6 @@
-import { NavItem } from "../nav-item/NavItem";
+import { NavItem } from '../nav-item/NavItem';
 import { ThemeButton } from '../../atoms/button/ThemeButton';
-import './nav-list.scss'
+import './nav-list.scss';
 
 interface NavItem {
   href: string;
@@ -8,11 +8,11 @@ interface NavItem {
 }
 
 const navItems: ReadonlyArray<NavItem> = [
-  { href: "/", text: "Home" },
-  { href: "/projects", text: "Projects" },
-  { href: "/about", text: "About" },
-  { href: "/contact", text: "Contact" },
-  { href: "/Albert_Mpepo_Resume.pdf", text: "Download Resume" }
+  { href: '/', text: 'Home' },
+  { href: '/projects', text: 'Projects' },
+  { href: '/about', text: 'About' },
+  { href: '/contact', text: 'Contact' },
+  { href: '/Albert_Mpepo_Resume.pdf', text: 'Download Resume' },
 ];
 
 export const NavList = () => (

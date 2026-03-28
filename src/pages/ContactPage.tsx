@@ -6,8 +6,8 @@ import './contact-page.scss';
 export default function ContactPage() {
   return (
     <section className="contact-page" id="contact">
-      <SectionHeader 
-        title="Get in touch" 
+      <SectionHeader
+        title="Get in touch"
         subtitle="Feel free to contact me for any project or collaboration."
         titleClass="section__title section__title--contact"
         subtitleClass="section__subtitle section__subtitle--contact"

@@ -1,6 +1,6 @@
-import { ReactNode } from "react";
-import SectionHeader from "../../molecules/section-header/SectionHeader";
-import PortfolioItem from "../../molecules/portfolio-item/PortfolioItem";
+import { ReactNode } from 'react';
+import SectionHeader from '../../molecules/section-header/SectionHeader';
+import PortfolioItem from '../../molecules/portfolio-item/PortfolioItem';
 import portfolio_01 from '../../../img/square-trivia.jpg';
 import portfolio_02 from '../../../img/square-flight.jpg';
 import portfolio_03 from '../../../img/py_laptop.jpg';
@@ -14,11 +14,19 @@ import portfolio_05 from '../../../img/square-construction.jpg';
 import './projects.scss';
 
 const portfolioItems = [
-  { src: portfolio_01, title: "Quizzical", url: "https://quizzical-psi-wheat.vercel.app/" },
-  { src: portfolio_02, title: "AirBnB Clone", url: "https://github.com/Albieo/AirBnB_clone_v4" },
-  { src: portfolio_03, title: "Number Guessing Game", url: "https://github.com/Albieo/Number-Guessing-Game" },
-  { src: portfolio_04, title: "Basketball Scoreboard", url: "https://basketball-scoreboard-eta.vercel.app/" },
-  { src: portfolio_05, title: "StaffQuest", uri: "https://staffquest.onrender.com/" },
+  { src: portfolio_01, title: 'Quizzical', url: 'https://quizzical-psi-wheat.vercel.app/' },
+  { src: portfolio_02, title: 'AirBnB Clone', url: 'https://github.com/Albieo/AirBnB_clone_v4' },
+  {
+    src: portfolio_03,
+    title: 'Number Guessing Game',
+    url: 'https://github.com/Albieo/Number-Guessing-Game',
+  },
+  {
+    src: portfolio_04,
+    title: 'Basketball Scoreboard',
+    url: 'https://basketball-scoreboard-eta.vercel.app/',
+  },
+  { src: portfolio_05, title: 'StaffQuest', uri: 'https://staffquest.onrender.com/' },
   // { src: portfolio_06, title: "Portfolio item 06" },
   // { src: portfolio_07, title: "Portfolio item 07" },
   // { src: portfolio_08, title: "Portfolio item 08" },

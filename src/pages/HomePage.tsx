@@ -1,8 +1,8 @@
-import Intro from '../components/organisms/introduction/Intro'
-import MyService from '../components/organisms/my-services/MyService'
-import FeaturedProject from '../components/organisms/featured-project/FeaturedProject'
-import SkillsPreview from '../components/organisms/skills-preview/SkillsPreview'
-import CTA from '../components/organisms/cta/CTA'
+import Intro from '../components/organisms/introduction/Intro';
+import MyService from '../components/organisms/my-services/MyService';
+import FeaturedProject from '../components/organisms/featured-project/FeaturedProject';
+import SkillsPreview from '../components/organisms/skills-preview/SkillsPreview';
+import CTA from '../components/organisms/cta/CTA';
 
 export default function HomePage() {
   return (
@@ -13,5 +13,5 @@ export default function HomePage() {
       <FeaturedProject />
       <CTA />
     </>
-  )
+  );
 }

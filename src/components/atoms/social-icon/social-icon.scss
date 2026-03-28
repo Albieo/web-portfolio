@@ -18,8 +18,7 @@
       content: '';
       inset: -3px;
       border-radius: inherit;
-      background: conic-gradient(var(--clr-accent) var(--fill),
-          transparent var(--fill));
+      background: conic-gradient(var(--clr-accent) var(--fill), transparent var(--fill));
       transition: --fill 0.6s ease-in-out;
     }
   }

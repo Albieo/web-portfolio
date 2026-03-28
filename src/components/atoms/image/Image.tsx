@@ -1,5 +1,5 @@
-import { ReactNode } from "react";
-import "./image.scss";
+import { ReactNode } from 'react';
+import './image.scss';
 
 interface ImageProps {
   src: string;

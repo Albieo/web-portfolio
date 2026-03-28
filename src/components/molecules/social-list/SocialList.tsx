@@ -1,6 +1,6 @@
-import { faGithub, faLinkedin, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons'
-import SocialIcon from '../../atoms/social-icon/SocialIcon'
-import './social-list.scss'
+import { faGithub, faLinkedin, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import SocialIcon from '../../atoms/social-icon/SocialIcon';
+import './social-list.scss';
 
 const SocialList = () => (
   <ul className="social-list">
@@ -14,9 +14,13 @@ const SocialList = () => (
       <SocialIcon icon={faTwitter} href="https://x.com/AlbertMpepo/" title="Twitter" />
     </li>
     <li className="social-list__item">
-      <SocialIcon icon={faInstagram} href="https://www.instagram.com/albieo_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" title="Instagram" />
+      <SocialIcon
+        icon={faInstagram}
+        href="https://www.instagram.com/albieo_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+        title="Instagram"
+      />
     </li>
   </ul>
-)
+);
 
-export default SocialList
+export default SocialList;

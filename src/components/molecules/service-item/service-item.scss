@@ -4,7 +4,9 @@
   border-radius: var(--br, 0.75em);
   padding: 2em 1.75em;
   text-align: left;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 
   &:hover {
     transform: translateY(-4px);

@@ -23,11 +23,13 @@ Follow these instructions to get a copy of the project up and running on your lo
 ### Installation
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/albieo/web-portfolio.git
    ```
 
 2. Navigate to the project directory:
+
    ```bash
    cd web-portfolio
    ```
@@ -40,6 +42,7 @@ Follow these instructions to get a copy of the project up and running on your lo
 ### Development
 
 Start the development server:
+
 ```bash
 yarn dev
 ```
@@ -49,11 +52,38 @@ The application will be available at `http://localhost:5173`.
 ### Building for Production
 
 To create an optimized production build:
+
 ```bash
 yarn build
 ```
 
 The output will be in the `dist` folder.
+
+## 🧹 Linting and Formatting
+
+To ensure code quality and consistency, this project uses ESLint and Prettier.
+
+### Linting
+
+Check for linting errors:
+
+```bash
+yarn lint
+```
+
+Automatically fix linting issues:
+
+```bash
+yarn lint:fix
+```
+
+### Formatting
+
+Format the entire project using Prettier:
+
+```bash
+yarn format
+```
 
 ## 📄 License
 

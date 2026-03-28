@@ -1,6 +1,6 @@
 import { ReactElement } from 'react';
 
-import './ham-menu.scss'
+import './ham-menu.scss';
 
 export const HamburgerIcon = (): ReactElement => (
   <div className="ham-menu">

@@ -1,5 +1,5 @@
-import { ReactNode } from "react";
-import "./typography.scss";
+import { ReactNode } from 'react';
+import './typography.scss';
 
 interface SubtitleProps {
   text: string;
