@@ -21,20 +21,36 @@ const FeaturedProject = () => {
           </div>
 
           <div className="featured-project__info">
-            <h3 className="featured-project__title">Impact Circle — Community Events & Social Impact Platform</h3>
+            <h3 className="featured-project__title">Impact Circle</h3>
+            <h4 className="featured-project__subtitle">
+              Community Events & Social Impact Platform
+            </h4>
             <p className="featured-project__stack">React • TypeScript • Sanity.io • REST APIs</p>
 
             <div className="featured-project__description">
               <p>
-                A full-stack web platform designed to manage and showcase community events and charity initiatives, enabling structured, transparent, and measurable social impact.
+                A full-stack web platform designed to manage and showcase community events and
+                charity initiatives, enabling structured, transparent, and measurable social impact.
               </p>
 
               <ul className="featured-project__list">
-                <li>Developed a responsive and user-friendly frontend using React and TypeScript</li>
-                <li>Integrated Sanity.io headless CMS to enable dynamic, real-time content management</li>
-                <li>Implemented GROQ queries and API-driven data fetching for efficient content delivery</li>
-                <li>Designed reusable and scalable UI components for maintainability and performance</li>
-                <li>Built a centralized platform to improve visibility and accessibility of community initiatives</li>
+                <li>
+                  Developed a responsive and user-friendly frontend using React and TypeScript
+                </li>
+                <li>
+                  Integrated Sanity.io headless CMS to enable dynamic, real-time content management
+                </li>
+                <li>
+                  Implemented GROQ queries and API-driven data fetching for efficient content
+                  delivery
+                </li>
+                <li>
+                  Designed reusable and scalable UI components for maintainability and performance
+                </li>
+                <li>
+                  Built a centralized platform to improve visibility and accessibility of community
+                  initiatives
+                </li>
               </ul>
             </div>
 

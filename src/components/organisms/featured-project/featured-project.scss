@@ -75,6 +75,13 @@
   color: var(--clr-light);
 }
 
+.featured-project__subtitle {
+  font-size: 1.2rem;
+  font-weight: var(--fw-bold);
+  line-height: 1.1;
+  color: var(--clr-light);
+}
+
 .featured-project__stack {
   font-family: var(--ff-secondary);
   color: var(--clr-accent);
@@ -89,6 +96,7 @@
     font-size: 1.1rem;
     line-height: 1.6;
     color: #ccc;
+    text-align: justify;
     max-width: 100%;
   }
 }
