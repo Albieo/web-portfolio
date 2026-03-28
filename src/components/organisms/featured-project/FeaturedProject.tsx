@@ -41,7 +41,7 @@ const FeaturedProject = () => {
               <a href="#" className="btn featured-project__btn--live">
                 Live
               </a>
-              <Link to="/portfolio" className="btn btn--secondary featured-project__btn--more">
+              <Link to="/projects" className="btn btn--secondary featured-project__btn--more">
                 More Projects
               </Link>
             </div>
