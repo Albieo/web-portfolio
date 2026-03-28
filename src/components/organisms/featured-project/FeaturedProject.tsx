@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './featured-project.scss';
 import featuredImg from '../../../img/featured-project.png';
 
@@ -40,9 +41,9 @@ const FeaturedProject = () => {
               <a href="#" className="btn featured-project__btn--live">
                 Live
               </a>
-              <a href="#" className="btn btn--secondary featured-project__btn--github">
-                GitHub
-              </a>
+              <Link to="/portfolio" className="btn btn--secondary featured-project__btn--github">
+                More Projects
+              </Link>
             </div>
           </div>
         </div>
