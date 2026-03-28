@@ -69,7 +69,7 @@ img {
 }
 
 section {
-    padding: 5em 2em;
+    padding: 7em 2em;
 }
 
 
@@ -128,6 +128,8 @@ h3 {
 
 p {
     line-height: 1.7;
+    max-width: 70ch;
+    margin-bottom: 1.5em;
 }
 
 .section__title {
