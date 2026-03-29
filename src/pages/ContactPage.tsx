@@ -1,6 +1,5 @@
 import SectionHeader from '../components/molecules/section-header/SectionHeader';
-import EmailLink from '../components/molecules/email-link/EmailLink';
-import SocialList from '../components/molecules/social-list/SocialList';
+import SocialCardGrid from '../components/molecules/social-card-grid/SocialCardGrid';
 import './contact-page.scss';
 
 export default function ContactPage() {
@@ -13,10 +12,7 @@ export default function ContactPage() {
         subtitleClass="section__subtitle section__subtitle--contact"
       />
       <div className="contact-page__content">
-        <EmailLink />
-        <div className="contact-page__socials">
-          <SocialList />
-        </div>
+        <SocialCardGrid />
       </div>
     </section>
   );
