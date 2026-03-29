@@ -9,10 +9,9 @@
   text-transform: uppercase;
   letter-spacing: 0.5px;
   width: fit-content;
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: var(--clr-dark);
   border: 1px solid rgba(255, 255, 255, 0.1);
   color: var(--clr-light);
-  margin-bottom: 0.5rem;
 
   &__light {
     width: 8px;

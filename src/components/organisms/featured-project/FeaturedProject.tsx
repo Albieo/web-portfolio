@@ -19,16 +19,15 @@ const FeaturedProject = () => {
               alt="Community Events Platform"
               className="featured-project__img"
             />
+            <StatusPill status="In Progress" />
           </div>
 
           <div className="featured-project__info">
-            <StatusPill status="In Progress" />
             <h3 className="featured-project__title">Impact Circle</h3>
             <h4 className="featured-project__subtitle">
               Community Events & Social Impact Platform
             </h4>
-            <p className="featured-project__stack">React • TypeScript • Sanity.io • REST APIs</p>
-
+            <p className="featured-project__stack">React • TypeScript • Sanity.io • REST APIs </p>
             <div className="featured-project__description">
               <p>
                 A full-stack web platform designed to manage and showcase community events and

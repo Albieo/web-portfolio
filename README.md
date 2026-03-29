@@ -2,6 +2,8 @@
 
 A modern, responsive web portfolio designed to showcase development skills, projects, and professional background.
 
+Live Site: [https://albieo.netlify.app/](https://albieo.netlify.app/)
+
 ## 🚀 Technologies Used
 
 - **React 19**: Modern UI library for building interactive interfaces.
@@ -58,6 +60,11 @@ yarn build
 ```
 
 The output will be in the `dist` folder.
+
+## 🌐 Deployment
+
+The application is automatically deployed on every push and is available at:
+👉 **[https://albieo.netlify.app/](https://albieo.netlify.app/)**
 
 ## 🧹 Linting and Formatting
 
