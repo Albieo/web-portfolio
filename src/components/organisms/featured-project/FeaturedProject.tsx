@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import './featured-project.scss';
 import featuredImg from '../../../img/featured-project.png';
+import StatusPill from '../../atoms/status-pill/StatusPill';
 
 const FeaturedProject = () => {
   return (
@@ -21,6 +22,7 @@ const FeaturedProject = () => {
           </div>
 
           <div className="featured-project__info">
+            <StatusPill status="In Progress" />
             <h3 className="featured-project__title">Impact Circle</h3>
             <h4 className="featured-project__subtitle">
               Community Events & Social Impact Platform
